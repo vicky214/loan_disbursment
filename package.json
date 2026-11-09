@@ -1,0 +1,27 @@
+{
+  "name": "fintech-disbursement-pipeline",
+  "version": "1.0.0",
+  "description": "Production-grade idempotent payment and loan disbursement pipeline with Transactional Outbox pattern, Saga orchestrator, and double-entry ledger.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "sim": "tsx src/scripts/simulate_disbursement.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "fintech",
+    "idempotency",
+    "saga-pattern",
+    "transactional-outbox",
+    "distributed-transactions",
+    "ledger"
+  ],
+  "author": "Vicky Kumar",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.3"
+  }
+}
